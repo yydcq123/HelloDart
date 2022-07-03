@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-16">
+        <title>A Minimalist App</title>
+        <script defer src="fetch-data.dart.js"></script>
+        <link rel="stylesheet" href="fetch-data.css">
+    </head>
+
+    <body>
+        <h1>Date</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>Input</th>
+                    <th>Type</th>
+                    <th>JSON string</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td align="right">Student number:</td>
+                    <td><input type="text" id="StdentNumber"></td>
+                    <td>integer</td>
+                    <td><textarea class="result" id="intAsJson" readonly></textarea></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Age:</td>
+                    <td><input type="text" id="Ageid"></td>
+                    <td>double</td>
+                    <td><textarea class="result" id="doubleAsJson" readonly></textarea></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Name</td>
+                    <td><input type="text" id="aname"></td>
+                    <td>String</td>
+                    <td><textarea class="result" id="stringname" readonly></textarea></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Phone:</td>
+                    <td><input type="text" id="Phone"></td>
+                    <td>double</td>
+                    <td><textarea class="result" id="doublenumber" readonly></textarea></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Address:</td>
+                    <td><input type="text" id="aAddress"></td>
+                    <td>String</td>
+                    <td><textarea class="result" id="Stringadd" readonly></textarea></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Favorite food:</td>
+                    <td>
+                        <input type="text" id="favOne">
+                        <input type="text" id="favTwo">
+                        <input type="text" id="favThree">
+                    </td>
+                    <td>List&lt;String&gt;</td>
+                    <td><textarea class="result" id="listAsJson" readonly></textarea></td>
+                </tr>
+
+                <tr>
+                    <td align="right">I admit that all of the above is true </td>
+                    <td>
+                        <form>
+                            <input type="radio" name="true" id="istrue" checked>True
+                            <input type="radio" name="true" id="notrue" checked>False
+                        </form>
+                    </td>
+                    <td>bool</td>
+                    <td><textarea class="result" id="boolAsJson" readonly> </textarea></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+
+
+        <p><a href="/">Home</a></p>
+    </body>
+
+</html>
